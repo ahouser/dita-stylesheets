@@ -1,4 +1,4 @@
-﻿<?xml version='1.0'?>
+<?xml version='1.0'?>
 
 <!-- ===================== CHANGE LOG ================================ -->
 <!--                                                                   -->
@@ -8,6 +8,9 @@
 <!-- 05 Oct 2015 KJE: Increased font size for section titles           -->
 <!-- 30 Jan 2019 KJE: Changed $default-title-color as required for     -->
 <!--                  OASIS rebranding                                 -->
+<!-- 06 Mar 2019 KJE: Changed base-font to 10 pt                       -->
+<!-- 07 Mar 2019 KJE: Changed serif to sans-serif; moved variable      -->
+<!--                  to oasis-cn-basic-settings.xsl file              -->
 <!--                                                                   -->
 <!-- ================================================================= -->  
 
@@ -15,14 +18,11 @@
                 xmlns:fo="http://www.w3.org/1999/XSL/Format"
                 xmlns:rx="http://www.renderx.com/XSL/Extensions"
                 version="2.0">
-        
-    <!-- VARIABLES -->
-    <xsl:variable name="default-title-color">#446CAA</xsl:variable>  
 
     <!-- BASIC FONT -->
     <xsl:attribute-set name="__fo__root" use-attribute-sets="base-font">
         <xsl:attribute name="font-family">sans-serif</xsl:attribute>
-        <xsl:attribute name="font-size">11pt</xsl:attribute>
+        <xsl:attribute name="font-size">10pt</xsl:attribute>
         <xsl:attribute name="id">fo-root-do-not-change</xsl:attribute>
     </xsl:attribute-set>
    
@@ -33,7 +33,7 @@
         <xsl:attribute name="color">
             <xsl:value-of select="$default-title-color"/>
         </xsl:attribute>
-        <xsl:attribute name="font-family">serif</xsl:attribute>
+        <xsl:attribute name="font-family">sans-serif</xsl:attribute>
         <xsl:attribute name="font-weight">normal</xsl:attribute>
         <xsl:attribute name="keep-with-next.within-column">always</xsl:attribute>
     </xsl:attribute-set>

@@ -5,6 +5,9 @@
 <!-- 05 Sep 2015 KJE: Added change log.                                -->
 <!-- 30 Jan 2019 KJE: Changed serif to "Arial"                         -->
 <!-- 20 Feb 2019 KJE: Changed serif and sans to "Liberation Sans"      -->
+<!-- 03 Mar 2019 KJE: Changed monospace to "Liberation Mono"           -->
+<!-- 07 Mar 2019 KJE: Changed serif to "Liberation Serif"              -->
+<!--                                                                   -->
 <!-- ================================================================= --> 
 
 <font-mappings>
@@ -55,7 +58,7 @@
 
     <logical-font name="Serif">
       <physical-font char-set="default">
-        <font-face>Liberation Sans</font-face>
+        <font-face>Liberation Serif</font-face>
       </physical-font>
       <physical-font char-set="Simplified Chinese">
         <font-face>AdobeSongStd-Light</font-face>
@@ -81,7 +84,7 @@
 
     <logical-font name="Monospaced">
       <physical-font char-set="default">
-        <font-face>Courier New, Courier</font-face>
+        <font-face>Liberation Mono</font-face>
       </physical-font>
       <physical-font char-set="Simplified Chinese">
         <font-face>AdobeSongStd-Light</font-face>

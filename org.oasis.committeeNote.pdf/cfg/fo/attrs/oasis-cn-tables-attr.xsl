@@ -7,15 +7,14 @@
 <!-- 21 Sep 2015 KJE: Added override for @keycol in header row         -->
 <!-- 08 Oct 2015  BT: Added strow.stentry override                     -->
 <!-- 01 Feb 2019 KJE: Changed color for table headers                  -->
+<!-- 06 Mar 2019 KJE: Changed font size for simple table cells         -->
+<!-- 07 Mar 2019 KJE: Moved variables to oasis-cn-basic-settings.xsl   -->
 <!--                                                                   -->
 <!-- ================================================================= --> 
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
                 xmlns:fo="http://www.w3.org/1999/XSL/Format" 
                 version="2.0">
-   
-  <!-- VARIABLES -->
-  <xsl:variable name="default-table-header-color">#edf1f8</xsl:variable>
   
   <!-- DEFINITION LISTS -->
   <xsl:attribute-set name="dl"/>
@@ -34,6 +33,9 @@
   <xsl:attribute-set name="sthead.stentry">
     <xsl:attribute name="background-color">
       <xsl:value-of select="$default-table-header-color"/>
+    </xsl:attribute>
+    <xsl:attribute name="font-size">
+      <xsl:value-of select="$default-table-font-size"/>
     </xsl:attribute>
   </xsl:attribute-set>
   
@@ -54,6 +56,9 @@
     <xsl:attribute name="border-before-style">solid</xsl:attribute>
     <xsl:attribute name="border-before-width">1pt</xsl:attribute>
     <xsl:attribute name="border-before-width.conditionality">retain</xsl:attribute>
+    <xsl:attribute name="font-size">
+      <xsl:value-of select="$default-table-font-size"/>
+    </xsl:attribute>
   </xsl:attribute-set>
   
 </xsl:stylesheet>
